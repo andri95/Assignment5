@@ -21,6 +21,41 @@ def print_info(pos_x, pos_y, movement):
                 print('Not a valid direction!')
         elif pos_x == 2 and pos_y == 2 or pos_x == 3 and pos_y == 3:
             print('You can travel: ' + directions[0] + ' or ' + directions[1] + ' or ' + directions[2] + '.')
+            if movement == 's' or movement == 'S':
+                pos_y -= 1
+            elif movement == 'e' or movement == 'E':
+                pos_x -= 1
+            else:
+                print('Not a valid direction!')
+        elif pos_x == 1 and pos_y == 3:
+            print('You can travel: ' + directions[1] + ' or ' + directions[2] + '.')
+            if movement == 'e' or movement == 'E':
+                pos_x += 1
+            elif movement == 's' or movement == 'S':
+                pos_y -= 1
+            else:
+                print('Not a valid direction!')
+        elif pos_x == 2 and pos_y == 3:
+            print('You can travel: ' + directions[1] + ' or ' + directions[3] + '.')
+            if movement == 'e' or movement == 'E':
+                pos_x += 1
+            elif movement == 'w' or movement == 'W':
+                pos_x -= 1
+            else:
+                print('Not a valid direction!')
+        elif pos_x == 1 and pos_y == 2:
+            print('You can travel: ' + directions[0] + ' or ' + directions[1] + ' or ' + directions[2] + '.')
+            if movement == 'n' or movement == 'N':
+                pos_y += 1
+            elif movement == 'e' or movement == 'E':
+                pos_x += 1
+            elif movement == 's' or movement == 'S':
+                pos_y -= 1
+            else:
+                print('Not a valid direction!')
+        elif
+
+
             
 
 
